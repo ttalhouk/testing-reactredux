@@ -3,10 +3,10 @@ import { connect } from 'react-redux';
 
 const CommentList = (props) => {
   const renderList = props.comments.map((comment, index) => {
-    return <li key={index}>{comment}</li>;
+    return <li className="list-group-item" key={index}>{comment}</li>;
   });
   return(
-    <ul className="comment-list">
+    <ul className="comment-list list-group">
       {renderList}
     </ul>
   );
