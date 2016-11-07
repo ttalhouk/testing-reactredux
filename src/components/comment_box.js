@@ -21,6 +21,7 @@ class CommentBox extends Component {
     return(
       <form
         className='comment-box form-group' onSubmit={this.handleSubmit.bind(this)} >
+        <h4>Add Comments to the List</h4>
         <textarea className='form-control' onChange={this.handleInput.bind(this)} value={this.state.comment}/>
         <button className='form-control btn btn-primary' action='submit' >Submit Comment</button>
       </form>
